@@ -1,0 +1,30 @@
+---
+layout: default 
+title: دليل العراق الشامل - الرئيسية
+---
+
+<h1>مرحباً بك في دليل العراق الشامل</h1>
+<p>هذا الموقع هو دليل مفتوح المصدر تم بناؤه بتعاون المجتمع لتوثيق وتسهيل الوصول إلى المعلومات والخدمات الحكومية والتعليمية في العراق.</p>
+
+<div class="sections-grid">
+    <section>
+        <h2><a href="{{ site.baseurl }}/gov-sites">المواقع الحكومية الرسمية</a></h2>
+        <p>روابط موثوقة ومُحدثة للوزارات والهيئات الحكومية.</p>
+        <ul>
+            {% for site in site.gov_sites limit: 3 %}
+                <li><a href="{{ site.url }}">{{ site.title_ar }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h2><a href="{{ site.baseurl }}/services">إجراءات الخدمات المدنية</a></h2>
+        <p>أدلة خطوة بخطوة لإنجاز المعاملات (جواز السفر، البطاقة الوطنية، إلخ).</p>
+        <ul>
+            {% for service in site.services_steps limit: 3 %}
+                <li><a href="{{ site.url }}">{{ service.title_ar }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    </div>
