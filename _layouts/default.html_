@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css"> 
+</head>
+<body>
+    <header>
+        <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+        <nav>
+            <a href="{{ site.baseurl }}/">الرئيسية</a> |
+            <a href="{{ site.baseurl }}/gov-sites">مواقع حكومية</a> |
+            <a href="{{ site.baseurl }}/services">الخدمات المدنية</a> |
+            <a href="{{ site.baseurl }}/education">التعليم</a>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }} 
+    </main>
+
+    <footer>
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }} - مشروع تعاوني مفتوح المصدر.</p>
+        <p>للمساهمة، يرجى تقديم طلب سحب (Pull Request) عبر GitHub.</p>
+    </footer>
+</body>
+</html>
