@@ -1,0 +1,27 @@
+# إعدادات الموقع الأساسية
+title: الدليل العراقي الشامل
+email: your-email@example.com
+description: >-
+  أرشيف مفتوح المصدر للمواقع الحكومية، الخدمات المدنية، والفرص التعليمية في العراق.
+
+# إعدادات النشر على GitHub Pages
+baseurl: "/B" # ضروري جداً لمستودعك الفرعي
+url: "https://vbhbv.github.io" 
+
+# تعريف المجموعات (Collections) الأربعة
+collections:
+  gov_sites:
+    output: true
+    permalink: /sites/:path/
+  services_steps:
+    output: true
+    permalink: /service/:path/
+  education:
+    output: true
+    permalink: /edu/:path/
+  utilities:
+    output: true
+    permalink: /util/:path/
+
+# إعدادات Markdown
+markdown: kramdown
